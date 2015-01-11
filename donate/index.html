@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Donate</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="price-box">
+                <h2>Donate</h2>
+                <p>If anything from ME has helped save you loads of time, advance your career or make you money, feel free to contribute back here. Thanks for your valuable donations :)</p>
+                <form class="form-horizontal form-pricing" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_xclick">
+                    <input type="hidden" name="business" value="D5BFLQALSTJU8">
+                    <input type="hidden" name="lc" value="AE">
+                    <input type="hidden" name="item_name" value="Donation">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="hidden" name="button_subtype" value="services">
+                    <input type="hidden" name="no_note" value="1">
+                    <input type="hidden" name="no_shipping" value="1">
+                    <input type="hidden" name="tax_rate" value="0.000">
+                    <input type="hidden" name="shipping" value="0.00">
+                    <input type="hidden" name="bn" value="PP-BuyNowBF:root.png:NonHosted">
+                    <div class="price-slider">
+                        <h4 class="great">Amount</h4>
+                        <span>Move slider right to increase the amount</span>
+                        <div class="col-sm-12">
+                            <div id="slider" >
+                                <div id="slidea" 
+                                     class="pull-left" 
+                                     data-placement="bottom" 
+                                     data-toggle="popover" 
+                                     title="Donation Amount" 
+                                     data-content="Move this slider right to increase the amount"
+                                     >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-form">
+                        <div class="form-group">
+                            
+                            <div class="col-sm-12 text-center">
+                                <input type="hidden" name="amount" id="amount" class="form-control">
+                                <h3>I will donate </h3>
+                                <div class="price lead">$</div>
+                                <div class="price lead" id="amount-label"></div>
+                                <span class="price">.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Proceed to donate via PayPal<span class="glyphicon glyphicon-chevron-right pull-right" style="padding-right: 10px;"></span></button>
+                        </div>
+                    </div>
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
